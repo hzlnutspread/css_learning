@@ -1,0 +1,10 @@
+h1 {
+    /* x   y   z */
+    text-shadow: 0px 0px 5px yellow, 0px -5px 5px red;
+    font-size: 50px;
+    width: min-content;
+}
+
+h1:hover {
+    box-shadow: 5px 5px 5px black;
+}

@@ -1,0 +1,33 @@
+h1 {
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+
+    border-left-style: double;
+    border-left-width: 10px;
+    border-left-color: silver;
+}
+
+#p1 {
+    color: aqua;
+    border-style: dashed;
+    border-width: 5px;
+    border-color: gold;
+    border-radius: 100px;
+    padding: 5%;
+}
+
+#p2 {
+    color: lime;
+    border-style: dotted;
+}
+
+#p3 {
+    color: red;
+    border-style: double;
+}
+
+#p4 {
+    color: red;
+    border-style: ridge;
+    padding: 5px;
+}

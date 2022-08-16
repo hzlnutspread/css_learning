@@ -1,0 +1,45 @@
+#box1 {
+    border: 1px solid;
+    height: 300px;
+    width: 300px;
+    background-color: skyblue;
+
+    /* Absolute searches for a parent positioned non-statically. 
+    If not then will use viewport */
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
+
+#box2 {
+    border: 1px solid;
+    height: 100px;
+    width: 100px;
+    background-color: lime;
+
+    position: relative;
+    top: 250px;
+    left: 450px;
+}
+
+#box3 {
+    border: 1px solid;
+    height: 200px;
+    width: 200px;
+    background-color: purple;
+
+    position: relative;
+    top: 25px;
+}
+
+#box4 {
+    border: 1px solid;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+}

@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: aqua;
+    font-family: "Press Start 2P", "consolas", "sans-serif";
+}
+
+p {
+    color: lime;
+    font-family: "consolas", sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: gray dotted underline;
+    font-size: 18px;
+}
+
+/*
+ Sans-serif fonts generally looks better. Just add a font-family: into the style
+ Usually list two fonts. One font you prefer, and if its not available it will default to a second
+ fonts.google.com can be used to find more cool fonts
+*/

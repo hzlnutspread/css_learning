@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(170, 16, 184);
+}
+
+h1 {
+    color: white;
+
+}
+
+p {
+    background-color: gray;
+    color: white;
+}
+
+/* in order to style elements by their id do the following*/
+#p1 {
+    color: tomato;
+}
+
+#p2 {
+    color: beige;
+}
+
+#p3 {
+    color: aquamarine;
+}
+
+#p4 {
+    color: brown;
+}
+
+/* can also target elements by their class do the following */
+.odd {
+    color: red;
+}
+
+.even {
+    color: blue;
+}
