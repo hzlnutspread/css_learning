@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        .subscribe-button {
+            background-color: rgb(200, 0, 0);
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+
+            /* CSS BOX MODEL: 
+                    Determines how much space it takes up
+                    How far it is away from other elements
+                    Buttons will resize with text*/
+
+            /* Not good to set these because if you add more characters it will spill out 
+            Instead of using height/width, can use padding*/
+            /* height: 36px;
+            width: 105px; */
+
+            /* Margin = space on outside of element */
+            /* Border */
+            /* Padding = space on inside of element */
+
+            /* CSS box elements: margin */
+            margin-right: 8px;
+
+
+            /* CSS box elements: padding */
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            /* Can use dev tools to find the values */
+            vertical-align: top;
+
+            transition: opacity 0.10s;
+        }
+
+        .subscribe-button:hover {
+            opacity: 0.8;
+        }
+
+
+        .subscribe-button:active {
+            opacity: 0.5;
+        }
+    </style>
+
+    <style>
+        .join-button {
+            background-color: white;
+            color: rgb(6, 95, 212);
+            border-style: solid;
+            /* remove the height and width to be able to resize */
+            border-color: rgb(6, 95, 212);
+            border-width: 1px;
+            border-radius: 2px;
+            cursor: pointer;
+            margin-right: 8px;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            transition: background-color 0.1s, color 0.1s;
+        }
+
+        .join-button:hover {
+            background-color: rgb(6, 95, 212);
+            color: white;
+        }
+
+        .join-button:active {
+            opacity: 0.7;
+        }
+    </style>
+
+    <style>
+        .tweet-button {
+            background-color: rgb(29, 155, 240);
+            color: white;
+            border: none;
+            height: 36px;
+            width: 74px;
+            border-radius: 18px;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+            vertical-align: top;
+            transition: box-shadow 0.15s, opacity 0.15s;
+        }
+
+        .tweet-button:hover {
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .tweet-button:active {
+            opacity: 70%;
+        }
+    </style>
+
+    <button class="subscribe-button">
+        SUBSCRIBE here
+    </button>
+
+    <button class="join-button">
+        JOIN me now
+    </button>
+
+    <button class="tweet-button">
+        Tweet
+    </button>
+
+
+
+
+
+
+</body>
+
+</html>
