@@ -1,0 +1,19 @@
+.thumbnail {
+    width: 360px;
+    height: 500px;
+    /* Cover = This makes it cover the given width/height */
+    /* Contain = makes the whole image show within the container */
+    object-fit: contain;
+    /* Can use this to choose which part of the picture you see when you use cover or contain*/
+    object-position: right;
+    border-width: 2px;
+    border-style: solid;
+    border-color: red;
+}
+
+.search-bar {
+    border-width: 2px;
+    font-size: 20px;
+    margin-left: 12px;
+
+}
