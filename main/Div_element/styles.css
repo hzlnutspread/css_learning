@@ -1,0 +1,40 @@
+.thumbnail {
+    width: 300px;
+    object-position: right;
+    border-width: 2px;
+
+    display: block;
+}
+
+.search-bar {
+    border-width: 2px;
+    font-size: 20px;
+
+    display: block;
+
+}
+
+.video-title {
+    width: 300px;
+}
+
+/* Changing these elements to inline block elements */
+.video-author,
+.video-stats {
+    /* display: inline-block; */
+}
+
+.video-preview1 {
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+.video-preview2 {
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+
+
+}
