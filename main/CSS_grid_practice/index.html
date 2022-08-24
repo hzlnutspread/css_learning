@@ -13,7 +13,7 @@
     <title>CSS GRID</title>
 </head>
 
-<body>
+<body style="padding-bottom: 1000px;">
     <div style="
     display: grid;
     grid-template-columns: 100px 100px;
@@ -44,13 +44,29 @@
 
     <div style="
     display: grid;
-    grid-template-columns: 100px 1fr 1fr;">
+    grid-template-columns: 100px 1fr 1fr;
+    margin-bottom: 20px;">
         <div style="background-color: lightblue;">div 1 <p>hello</p>
         </div>
         <div style="background-color: lightpink;">div 2 <p>more text</p>
         </div>
         <div style="background-color: green;">div 2 <p>more text</p>
         </div>
+
+    </div>
+
+    <div style="
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 20px;
+    column-gap: 10px;
+    row-gap: 10px;">
+        <div style="background-color: lightblue; height: 200px;">text</div>
+        <div style="background-color: lightpink; height: 200px;">text</div>
+        <div style="background-color: yellow; height: 200px;">text</div>
+        <div style="background-color: gray; height: 200px;">text</div>
+        <div style="background-color: lime; height: 200px;">text</div>
+        <div style="background-color: orange; height: 200px;">text</div>
     </div>
 
 </body>
