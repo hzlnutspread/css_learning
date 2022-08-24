@@ -7,8 +7,10 @@
 }
 
 .search-bar {
-    border-width: 2px;
+    border-width: 1px;
     font-size: 20px;
+    border-radius: 2px;
+    margin-bottom: 4px;
 
     display: block;
 

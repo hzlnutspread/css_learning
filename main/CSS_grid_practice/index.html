@@ -1,0 +1,58 @@
+<!-- Inline-block elements can sometimes raise problems with random spaces -->
+<!-- There is space between divs and if you try remove the code looks bad -->
+<!-- Use grids to make pretty layouts -->
+<!-- Grids have rows and columns -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CSS GRID</title>
+</head>
+
+<body>
+    <div style="
+    display: grid;
+    grid-template-columns: 100px 100px;
+    margin-bottom: 20px;">
+        <div style="background-color: lightblue;">div 1</div>
+        <div style="background-color: lightpink;">div 2</div>
+    </div>
+
+    <div style="
+    display: grid;
+    grid-template-columns: 100px 100px;
+    margin-bottom: 20px;">
+        <div style="background-color: lightblue;">div 1 <p>hello</p>
+        </div>
+        <div style="background-color: lightpink;">div 2 <p>more text</p>
+        </div>
+    </div>
+
+    <div style="
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    margin-bottom: 20px;">
+        <div style="background-color: lightblue;">div 1 <p>hello</p>
+        </div>
+        <div style="background-color: lightpink;">div 2 <p>more text</p>
+        </div>
+    </div>
+
+    <div style="
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr;">
+        <div style="background-color: lightblue;">div 1 <p>hello</p>
+        </div>
+        <div style="background-color: lightpink;">div 2 <p>more text</p>
+        </div>
+        <div style="background-color: green;">div 2 <p>more text</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
