@@ -1,0 +1,64 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 3000px;
+    padding-top: 50px;
+    padding-left: 82px;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 40px;
+    z-index: 1;
+}
+
+.div1 {
+    background-color: lightblue;
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
+
+.div2 {
+    background-color: lightpink;
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
+
+.sidebar {
+    background-color: green;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 40px;
+    width: 72px;
+}
+
+.absolute {
+    position: absolute;
+    background: red;
+    color: white;
+    right: 0px;
+    top: 0px;
+}
+
+.div1_time {
+    position: absolute;
+    background-color: green;
+    top: 0;
+    right: 0;
+}
+
+.div2_time {
+    position: absolute;
+    background-color: green;
+    top: 0;
+    right: 0;
+}

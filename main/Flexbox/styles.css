@@ -1,13 +1,32 @@
 body {
     margin: 0;
     padding-top: 55px;
-    padding-left: 72px;
+    padding-left: 76px;
 }
 
 .thumbnail {
     width: 100%;
     object-position: right;
     border-width: 2px;
+}
+
+.thumbnail-row {
+    margin-bottom: 8px;
+    position: relative;
+
+}
+
+.video_length {
+    font-size: 12px;
+    font-weight: 500;
+    font-family: Roboto, Arial;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    background-color: rgba(58, 57, 57);
+    padding: 4px 4px;
+    color: white;
+    border-radius: 2px;
 }
 
 .preview-picture {
@@ -26,11 +45,7 @@ body {
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
-    margin-bottom: 12px;
-}
-
-.thumbnail-row {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 p {
@@ -65,6 +80,7 @@ p {
     border-bottom: solid 1px;
     border-color: rgb(228,228,228);
     background-color: white;
+    z-index: 99;
 }
 
 .header_left-section {
@@ -77,10 +93,12 @@ p {
     height: 25px;
     margin-left: 20px;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 .youtube_logo {
     height: 50px;
+    cursor: pointer;
 }
 
 .header_middle-section {
@@ -103,7 +121,26 @@ p {
     border-color: rgb(192,192,192);
     margin-left: -1px;
     margin-right: 10px;
+    position: relative;
+    cursor: pointer;
 }
+
+.search_tooltip {
+    position: absolute;
+    background-color: gray;
+    color: white;
+    font-size: 12px;
+    bottom: -30px;
+    padding: 4px 8px;
+    border-radius: 2px;
+    opacity: 0;
+    transition: all 0.2s ease;
+    pointer-events: none;
+}
+
+.search_icon:hover .search_tooltip { 
+        opacity: 1;
+    }
 
 .microphone_icon {
     height: 40px;
@@ -112,13 +149,38 @@ p {
     border-style: none;
     border-radius: 50%;
     background-color: rgb(240,240,240);
+    cursor: pointer;
+    position: relative;
 }
 
-.microphone_icon i {
-    transform: scale(1.1);
+.search_icon, .microphone_icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
+.microphone_tooltip {
+    position: absolute;
+    font-weight: 400;
+    font-family: Roboto Arial, Helvetica, sans-serif;
+    background-color: gray;
+    color: white;
+    font-size: 12px;
+    bottom: -28px;
+    left: -6px;
+    padding: 4px 8px;
+    border-radius: 2px;
+    transition: all 0.2s ease;
+    pointer-events: none;
+    opacity: 0;
+
+}
+
+.microphone_icon:hover .microphone_tooltip { 
+    opacity: 1;
+}
 
 .search_bar {
     height: 36px;
@@ -154,8 +216,34 @@ p {
     flex-shrink: 0;
 }
 
+.notification_container {
+    position: relative;
+    display: flex;
+    
+}
+
+.notification_number {
+    position: absolute;
+    font-family: Roboto, Arial;
+    top: -5px;
+    right: -5px;
+    background-color: rgb(226, 2, 2);
+    color: white;
+    font-weight: 700;
+    height: 20px;
+    width: 20px;
+    font-size: 11px;
+    padding-left: 2px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+}
+
 .header_right-section img {
     height: 24px;
+    cursor: pointer;
 }
 
 .header_right-section img:nth-child(4) {
@@ -171,9 +259,35 @@ p {
     color: black;
     bottom: 0;
     left: 0;
-    width: 72px;
+    width: 76px;
+    z-index: 100;
+    padding-top: 5px;
+
 }
 
+
+.sidebar_box:hover {
+    background-color: rgb(235,235,235);
+}
+
+.sidebar_box {
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.sidebar_box img {
+    height: 24px;
+    margin-bottom: 4px;
+}
+
+.sidebar_box div {
+    font-family: Roboto, Arial;
+    font-size: 10px;
+}
 
 /* the content body with videos and stuff goes here */
 .body_content {
@@ -185,7 +299,28 @@ p {
     background-color: rgb(238, 235, 235);
 }
 
+@media (max-width: 768px) {
+   .body_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   }
+}
+
+@media (min-width: 768px) and (max-width: 1100px){
+    .body_content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1200px) {
+    .body_content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
 .body_content_wrapper {
-    padding: 10px 1rem;
-    background-color: rgb(238, 235, 235);
+    padding: 28px 30px;
+    background-color: rgb(245, 243, 243);
 }
