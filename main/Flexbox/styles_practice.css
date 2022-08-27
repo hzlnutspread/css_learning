@@ -1,0 +1,147 @@
+/* Can have flex-direction as row or column, determines how if they stack or next to eachother */
+.div1 {
+    background-color: lightblue;
+}
+.div_inner {
+    display: flex;
+    flex-direction: row;
+}
+
+.div_inner2 {
+    margin-top: 15px;
+    display: flex;
+}
+
+.div_inner3 {
+    margin-top: 15px;
+    display: flex;
+}
+
+.page_header {
+    margin-top: 15px;
+    display: flex;
+}
+
+.div2 {
+    background-color: lightpink;
+}
+
+.div3 {
+    background-color: lightblue;
+    width: 100px;
+}
+
+
+/* flex: 1 is the same as fr in grid */
+.div4 {
+    background-color: lightpink;
+    flex: 1;
+}
+
+.div5 {
+    width: 100px;
+    background-color: lightblue;
+}
+
+.div6 {
+    background-color: lightpink;
+    flex: 1;
+}
+
+.div7 {
+    background-color: lightblue;
+    flex: 3;
+}
+
+.div8 {
+    background-color: lightblue;
+    flex: 3;
+}
+.div9 {
+    background-color: lightpink;
+    flex: 3;
+}
+.div10 {
+    background-color: lightblue;
+    flex: 3;
+}
+
+body {
+    padding-bottom: 800px;
+}
+
+/* CREATING HEADER HERE */
+.page_header {
+    margin-top: 15px;
+    display: flex;
+    height: 80px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: gray;
+    justify-content: end;
+}
+
+.flex1 {
+    background-color: lightblue;
+    width: 100px;
+}
+.flex2 {
+    background-color: lightpink;
+    width: 100px;
+}
+.flex3 {
+    background-color: lightblue;
+    width: 100px;
+
+}
+
+.page_header2 {
+    margin-top: 15px;
+    display: flex;
+    height: 80px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: gray;
+    justify-content: space-between;
+}
+
+.flex4 {
+    background-color: lightblue;
+    width: 100px;
+}
+.flex5 {
+    background-color: lightpink;
+    width: 100px;
+}
+.flex6 {
+    background-color: lightblue;
+    width: 100px;
+
+}
+
+
+.page_header3 {
+    margin-top: 15px;
+    display: flex;
+    height: 80px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: gray;
+    justify-content: space-between;
+    align-items: flex-end; 
+    /* or flex-start or center */
+}
+
+.flex7 {
+    background-color: lightblue;
+    width: 100px;
+}
+.flex8 {
+    background-color: lightpink;
+    width: 100px;
+}
+.flex9 {
+    background-color: lightblue;
+    width: 100px;
+
+}
